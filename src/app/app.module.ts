@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { StartComponent } from './routes/start/start.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartComponent
+    StartComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
