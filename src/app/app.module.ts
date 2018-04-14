@@ -7,7 +7,7 @@ import {MaterialModule} from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { StartComponent } from './start/start.component';
+import { StartComponent } from './routes/start/start.component';
 
 
 @NgModule({
