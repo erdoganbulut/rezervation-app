@@ -1,0 +1,53 @@
+section.sidenav-component {
+  .sidenav--rows {
+    padding: 10px;
+    .sidenav--row {
+      padding: 10px;
+      &.sidenav--row__logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        a {
+          display: block;
+          height: auto;
+          width: 150px;
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      &.sidenav--row__nav {
+        nav {
+          padding: 0;
+          margin: 0;
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+              display: block;
+              margin: 0;
+              padding: 0;
+              a {
+                display: block;
+                width: 100%;
+                text-align: left;
+                line-height: 50px;
+                text-decoration: none;
+                color: #616161;
+                font-weight: 300;
+                mat-icon {
+                  color: #616161;
+                  margin-right: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

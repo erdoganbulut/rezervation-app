@@ -1,3 +1,4 @@
-<app-sidenav></app-sidenav>
-
-<router-outlet></router-outlet>
+<mat-sidenav-container class="example-container" *ngIf="true">
+  <mat-sidenav mode="side" opened><app-sidenav></app-sidenav></mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
