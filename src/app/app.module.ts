@@ -9,13 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartComponent } from './routes/start/start.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
-    SidenavComponent
+    SidenavComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
