@@ -1,5 +1,4 @@
 <mat-drawer-container class="example-container" *ngIf="true">
-  <mat-drawer #drawer mode="side"><app-sidenav></app-sidenav></mat-drawer>
+  <mat-drawer #drawer mode="side" [opened]="(isDrawer$ | async).isActive"><app-sidenav></app-sidenav></mat-drawer>
   <mat-drawer-content><app-topbar></app-topbar><router-outlet></router-outlet></mat-drawer-content>
-
 </mat-drawer-container>
