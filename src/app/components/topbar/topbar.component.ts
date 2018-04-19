@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
-import { OPEN, CLOSE, TRIGGER } from '../../store/sidenav/index';
+import { OPEN_SIDENAV, CLOSE_SIDENAV, TRIGGER_SIDENAV } from '../../store/sidenav/constants';
 import { AppState } from '../../models/appstate.model';
 
 @Component({
@@ -14,15 +14,15 @@ export class TopbarComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
 
   handleClickOpenSidenav() {
-    this.store.dispatch({ type: OPEN });
+    this.store.dispatch({ type: OPEN_SIDENAV });
   }
 
   handleClickCloseSidenav() {
-    this.store.dispatch({ type: CLOSE });
+    this.store.dispatch({ type: CLOSE_SIDENAV });
   }
 
   handleClickTriggerSidenav() {
-    this.store.dispatch({ type: TRIGGER });
+    this.store.dispatch({ type: TRIGGER_SIDENAV });
   }
 
   ngOnInit() {

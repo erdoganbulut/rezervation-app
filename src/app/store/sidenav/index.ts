@@ -1,19 +1,16 @@
 import { Action } from '@ngrx/store';
 import { Sidenav } from '../../models/sidenav.model';
-
-export const OPEN = 'OPEN';
-export const CLOSE = 'DECREMENT';
-export const TRIGGER = 'TRIGGER';
+import { OPEN_SIDENAV, CLOSE_SIDENAV, TRIGGER_SIDENAV } from './constants';
 
 export function sidenavReducer(state: Sidenav = { isActive: true }, action: Action) {
   switch (action.type) {
-    case OPEN:
+    case OPEN_SIDENAV:
       return { isActive: true };
 
-    case CLOSE:
+    case CLOSE_SIDENAV:
       return { isActive: false };
 
-    case TRIGGER:
+    case TRIGGER_SIDENAV:
       const val = !state.isActive;
       return { isActive: val };
 

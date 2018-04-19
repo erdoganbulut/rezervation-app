@@ -1,0 +1,5 @@
+export const OPEN_SIDENAV = 'OPEN_SIDENAV';
+
+export const CLOSE_SIDENAV = 'DECREMENT_SIDENAV';
+
+export const TRIGGER_SIDENAV = 'TRIGGER_SIDENAV';
