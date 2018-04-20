@@ -1,0 +1,21 @@
+.Home {
+  padding: 10px;
+  &--contents {
+    padding: 10px;
+    &-item {
+      padding: 10px;
+    }
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      &.box-items {
+        .box-item {
+          width: 100%;
+          @media (min-width: 768px) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
