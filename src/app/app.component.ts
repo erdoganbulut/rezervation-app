@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import { OPEN, CLOSE, TRIGGER } from './store/sidenav/index';
+import { OPEN_SIDENAV, CLOSE_SIDENAV, TRIGGER_SIDENAV } from './store/sidenav/constants';
 import { AppState } from './models/appstate.model';
 
 @Component({
@@ -18,15 +18,15 @@ export class AppComponent implements OnInit {
   }
 
   open() {
-    this.store.dispatch({ type: OPEN });
+    this.store.dispatch({ type: OPEN_SIDENAV });
   }
 
   close() {
-    this.store.dispatch({ type: CLOSE });
+    this.store.dispatch({ type: CLOSE_SIDENAV });
   }
 
   trigger() {
-    this.store.dispatch({ type: TRIGGER });
+    this.store.dispatch({ type: TRIGGER_SIDENAV });
   }
 
   ngOnInit() {
