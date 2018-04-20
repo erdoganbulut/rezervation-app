@@ -13,6 +13,7 @@ import { StartComponent } from './routes/start/start.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { sidenavReducer } from './store/sidenav/';
+import { RezervationsComponent } from './routes/rezervations/rezervations.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { sidenavReducer } from './store/sidenav/';
     AppComponent,
     StartComponent,
     SidenavComponent,
-    TopbarComponent
+    TopbarComponent,
+    RezervationsComponent
   ],
   imports: [
     BrowserModule,
