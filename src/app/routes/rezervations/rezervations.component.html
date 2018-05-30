@@ -1,3 +1,40 @@
-<p>
-  rezervations works!
-</p>
+<section class="Rezervations">
+  <div class="Rezervations--contents">
+    <div class="Rezervations--contents__item">
+      <mat-card class="Rezervations--tools">
+        <mat-form-field>
+          <mat-select [placeholder]="rezervationTypes.placeholder">
+            <mat-option *ngFor="let val of rezervationTypes.vals" [value]="val.value">
+              {{ val.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card>
+    </div>
+    <div class="Rezervations--contents__row row--boxes">
+      <div class="Rezervations--contents__item row--boxes__item" *ngFor="let val of [5,6,7,8,9,10,11]">
+        <mat-card class="Rezervations--product-box">
+          <mat-card-header>
+            <mat-card-title>Başlangıç Randevuları</mat-card-title>
+            <mat-card-actions>
+              <button mat-icon-button>
+                <mat-icon aria-label="Example icon-button with a heart icon">add_shopping_cart</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon aria-label="Example icon-button with a heart icon">info_outline</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card-header>
+          <img mat-card-image [src]="'../../../assets/'+ val +'.jpg'" alt="">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
